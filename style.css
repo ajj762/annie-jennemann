@@ -1,6 +1,8 @@
 body {
   background: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Playfair Display', serif;
   font-family: 'Lato', sans-serif;
   margin: 30px;
@@ -12,13 +14,15 @@ h1 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 3em;
-  text-align: left;
+  margin: auto;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 2.75em;
+  margin: auto;
+  display: block;
 }
 
 h3 {
@@ -26,7 +30,6 @@ h3 {
   font-weight: bold;
   font-size: 1.1em;
   color: #666666;
-  text-align: left;
   text-transform: uppercase;
 }
 
@@ -40,9 +43,8 @@ p {
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
   padding: 10px;
-  text-align: left;
+  text-align:
 }
 
 ul {
@@ -73,6 +75,25 @@ a:hover {
   color: #FF6A95;
 }
 
+.pictextholder {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+}
+
+.me {
+  box-sizing: border-box;
+  max-width: 70%;
+  max-height: 400px;
+}
+
+.about {
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .graphics {
   display: flex;
   flex-direction: column;
@@ -81,11 +102,11 @@ a:hover {
 }
 
 .fade-in {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 
 @keyframes fadeIn {
@@ -130,4 +151,16 @@ a:hover {
   }
   100% {
     opacity:1;
+  }
+}
+
+@media screen (min-width: 499px) {
+
+  .pictextholder {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
