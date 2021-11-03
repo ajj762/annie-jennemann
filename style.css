@@ -101,7 +101,6 @@ a:hover {
 
 .me {
   max-width: 40%;
-  min-width: 300px;
   margin: 20px;
   margin-top: 40px;
 }
@@ -113,13 +112,14 @@ a:hover {
 }
 
 .graphic {
-  max-width: 100%;
+  max-width: 60%;
   margin: 10px;
 }
 
 .graphicscontainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: auto;
   max-width: 65%;
 }
@@ -224,7 +224,8 @@ a:hover {
     display: none;
   }
 
-
-
+  .graphic {
+    max-width: 100%;
+  }
 
 }
