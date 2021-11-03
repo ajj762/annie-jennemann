@@ -5,7 +5,7 @@ body {
   justify-content: center;
   font-family: 'Playfair Display', serif;
   font-family: 'Lato', sans-serif;
-  margin: 30px;
+  margin: 15px;
   padding: 10px;
   font-size: 16px;
 }
@@ -23,6 +23,7 @@ h2 {
   font-size: 2.75em;
   margin: auto;
   display: block;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -36,7 +37,7 @@ h3 {
 
 .line {
   width: auto;
-  border-bottom: 3px solid #FF6A95;
+  border-bottom: 3px solid #FF8A80;
   margin-bottom: 30px;
 }
 
@@ -51,8 +52,12 @@ nav {
 
 ul {
   list-style-type: none;
-  padding: 0;
-  font-size: 20px;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 p {
@@ -81,16 +86,7 @@ a {
 }
 
 a:hover {
-  color: #FF6A95;
-}
-
-#menu_nav {
-  margin: 0px;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  color: #FF8A80;
 }
 
 #menu_trigger {
@@ -99,12 +95,13 @@ a:hover {
 
 #pictextholder {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .me {
   max-width: 40%;
+  min-width: 300px;
   margin: 20px;
   margin-top: 40px;
 }
@@ -115,7 +112,12 @@ a:hover {
   max-width: 600px;
 }
 
-.graphics {
+.graphic {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.graphicscontainer {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -181,18 +183,48 @@ a:hover {
   }
 }
 
-
-@media screen (max-width: 599px) {
+@media screen and (max-width: 800px) {
 
   #pictextholder {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 699px) {
+
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-#menu_nav {
+  ul {
     flex-direction: column;
   }
 
-#menu_trigger {
-  display: none;
-}
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #menu_trigger {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    font-size: 25px;
+    max-width: 55px;
+    background-color: #FF8A80;
+    border: none;
+  }
+
+  #menu_nav {
+    display: none;
+  }
+
+
+
 
 }
