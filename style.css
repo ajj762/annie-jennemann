@@ -109,12 +109,24 @@ a:hover {
   margin: 10px;
 }
 
-.graphicscontainer {
+#graphicscontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   max-width: 65%;
+}
+
+#resumecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume {
+  max-width: 70%;
+  border: 5px solid grey;
+  margin-top: 20px;
 }
 
 #header {
@@ -208,7 +220,6 @@ a:hover {
     top: 50px;
     right: 15px;
     font-size: 15px;
-    max-width: 10%;
     background-color: #FF8A80;
     border: none;
   }
@@ -227,23 +238,8 @@ a:hover {
     margin-top: 0px;
   }
 
-  .graphicscontainer {
+  #graphicscontainer {
     max-width: 90%;
-  }
-
-}
-
-@media screen and (max-width: 499px) {
-
-  body {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .me {
-    width: 80%;
-    margin: 0px;
-    margin-top: 0px;
   }
 
 }
