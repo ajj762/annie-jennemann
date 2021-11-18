@@ -1,5 +1,5 @@
 body {
-  background: #FAF8F1;
+  background: #F8F5EC;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,6 +107,12 @@ a:hover {
 .graphic {
   max-width: 70%;
   margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.download {
+  margin-bottom: 30px;
 }
 
 #graphicscontainer {
