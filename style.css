@@ -74,7 +74,6 @@ a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-size: 1em;
 }
@@ -223,16 +222,11 @@ a:hover {
   #menu_trigger {
     display: block;
     position: absolute;
-    top: 50px;
-    right: 20px;
-    font-size: 30px;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
     background: none;
     border: none;
-  }
-
-  #menu_trigger:hover {
-    background-color: #FF8A80;
-
   }
 
   #menu_nav {
