@@ -1,2 +1,2 @@
-# Annie Jennemann's portfolio website
-# https://ajj762.github.io/annie-jennemann/
+# annie-jennemann
+https://j4502-fs21.github.io/annie-jennemann/
