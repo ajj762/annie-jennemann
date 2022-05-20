@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Missouri Bills Database</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Annie Jennemann's portfolio.">
+  <meta name="author" content="Annie Jennemann">
+  <meta name="keywords" content="Annie Jennemann, portfolio"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="header">
+    <div class="fade-in">
+      <h1>Annie Jennemann</h1>
+      <h3>Data journalist</h3>
+    </div>
+
+<div class="navbar">
+    <nav>
+      <ul id="menu_nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Graphics</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="bills.html">Bill database</a></li>
+          <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <button id="menu_trigger">☰</button>
+    </nav>
+</div>
+</div>
+
+<div class="line"></div>
+
+<div id="datacontainer">
+
+  <h2>Missouri Bills Database Project</h2>
+
+  <p>During the spring of 2022, I worked on a four-month long reporting project on data, graphics and other visual storytelling. This reporting project was a multi-story and multiplatform project about the changing landscape of Missouri's rural communities.</p>
+
+  <p>During this project, we wanted to track the decisions made that led to inequities within these communities on a statewide level. We found there was no good way to search issues by keyword for multiple years.</p>
+
+  <p>I put together a database of Missouri bills truly agreed and finally passed from 2000 to 2022 that is searchable. This project was for our own use, but is publicly available for anyone to replicate and use. Below is the database. Visit the <a href="https://github.com/ajj762/mo-bills">GitHub repository</a> or the <a href="https://ajj762.github.io/mo-bills/">main URL</a> for the database.</p>
+
+<iframe class="iframe" width="100%" height="900px" src="https://ajj762.github.io/mo-bills/"allowfullscreen></iframe>
+
+</body>
+
+<script src="main.js" type="text/javascript">
+
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+
+</script>
+
+</html>
