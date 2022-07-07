@@ -37,6 +37,14 @@ h3 {
   color: black;
 }
 
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #666666;
+  display: flex;
+}
+
 .line {
   width: auto;
   border-bottom: 3px solid #FF8A80;
@@ -125,6 +133,13 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.story {
+  max-width: 70%;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .download {
   margin-bottom: 30px;
 }
@@ -137,13 +152,24 @@ a:hover {
   max-width: 65%;
 }
 
-
 #datacontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   max-width: 65%;
+}
+
+.textcontainer {
+  margin: auto;
+  max-width: 65%;
+}
+
+.line2 {
+  width: auto;
+  border-bottom: .75px solid black;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 #resumecontainer {
