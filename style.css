@@ -127,6 +127,11 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.cont {
+  display: inline-grid;
+
+}
+
 .monarch {
   display: flex;
   flex-direction: row;
